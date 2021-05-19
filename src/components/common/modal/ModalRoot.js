@@ -65,7 +65,6 @@ export class ModalControl extends React.Component {
     return (
       <ModalContext.Consumer>
         {(context) => {
-          console.log(context);
           return this.props.children(context);
         }}
       </ModalContext.Consumer>

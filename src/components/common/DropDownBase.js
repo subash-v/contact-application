@@ -71,7 +71,6 @@ export default class DropDownBase extends React.Component {
     );
   };
   handleClick = evt => {
-      console.log("HERE")
     if (!this.node.contains(evt.target)) {
       this.props.toggleOverlay(false);
       this.setState({ dropDownVisible: false });

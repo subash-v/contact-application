@@ -11,7 +11,6 @@ const contacts = (state = defaultState, action) => {
         loading: true,
       };
     case `${Actions.GETCONTACTS}_${Status.SUCCESS}`:
-      console.log(action.body);
       return {
         ...state,
         loading: false,

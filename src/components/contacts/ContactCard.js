@@ -14,7 +14,6 @@ export default function ContactCard(props) {
     },
   ];
   const handleMenu = (option) => {
-    console.log(option);
     switch (option) {
       case "edit": {
         props.handleEdit(data);

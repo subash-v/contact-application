@@ -3,7 +3,6 @@ import delayUnmounting from "./delayUnmounting";
 
 import styles from "./FadeInOut.module.scss";
 function Box(props) {
-  console.log(props);
   return (
     <div className={props.styleClass}>
       <div
