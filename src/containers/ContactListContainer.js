@@ -50,7 +50,6 @@ export default function ContactListContainer(props) {
   return (
     <ModalControl>
       {(control) => {
-        console.log(control);
         return (
           <React.Fragment>
             {loading && <Loader />}
