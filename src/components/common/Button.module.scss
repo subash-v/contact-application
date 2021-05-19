@@ -1,0 +1,79 @@
+$red: #ff435e;
+$green: #00b893;
+.primary {
+  width: auto;
+  display: inline-block;
+  height: 40px;
+  padding: 0 15px;
+  background: $green;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: 500;
+  justify-content: center;
+  background-position: center;
+  transition: background 0.8s;
+}
+.primary:hover {
+  background: #2c83e0 radial-gradient(circle, transparent 1%, #2c83e0 1%) center/15000%;
+}
+.primary:active {
+  background-color: #999999;
+  background-size: 100%;
+  transition: background 0s;
+}
+.primaryLoading {
+  @extend .primary;
+  pointer-events: none;
+  font-size: 0;
+}
+.secondary {
+  composes: primary;
+  background: $red;
+}
+.secondary-loading {
+  compose: secondary;
+  pointer-events: none;
+  font-size: 0;
+}
+.tertiary {
+  composes: primary;
+  color: #000;
+  border: 1px solid #000;
+  background: #fff;
+}
+.tertiary-loading {
+  compose: tertiary;
+  pointer-events: none;
+  font-size: 0;
+}
+.primaryLoading:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #000; /* Blue */
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

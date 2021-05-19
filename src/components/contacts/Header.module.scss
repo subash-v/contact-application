@@ -1,0 +1,37 @@
+.base {
+  width: 100%;
+  height: auto;
+  padding: 20px 0px;
+  .iconHolder {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .setting {
+      width: 30px;
+      height: 30px;
+      background: url("../../images/settings.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .close {
+      width: 30px;
+      height: 30px;
+      background: url("../../images/cancelBlack.svg") no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .headingText {
+    font-weight: bold;
+    font-size: 24px;
+    color: #151e2f;
+    margin-bottom: 10px;
+  }
+  .searchHolder{
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+  }
+}

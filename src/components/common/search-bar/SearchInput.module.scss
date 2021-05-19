@@ -1,0 +1,33 @@
+$grey7: #204866;
+
+.base {
+  width: 100%;
+  height: 40px;
+ 
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+  input[placeholder] {
+
+  }
+  input[disabled] {
+    background: $grey7;
+    cursor: not-allowed;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 8px;
+  }
+}
+.inputActual {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 15px;
+  border: none;
+  font-size: 14px;
+}

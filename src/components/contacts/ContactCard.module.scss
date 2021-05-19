@@ -1,0 +1,75 @@
+.base {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  position: relative;
+  .iconHolder {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    .callerIcon {
+      width: 40px;
+      height: 40px;
+      background: url("../../images/person.svg") no-repeat;
+      background-position: center;
+      background-size: 30px;
+      border-radius: 50%;
+      background-color: #0000001a;
+    }
+    
+  }
+  .cardDetails {
+    .heading {
+      font-size: 16px;
+      font-weight: 500;
+      color: #000;
+      text-transform: capitalize;
+    }
+    .subHeading {
+      font-size: 12px;
+      font-weight: normal;
+      color: #999;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .call {
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    background-image: url("../../images/phoneIcon.svg");
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 10px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+  }
+  .iconPosition {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+  .actionIcon {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .moreIcon {
+    @extend .actionIcon;
+    background-image: url("../../images/vertical-dot.svg");
+  }
+}
