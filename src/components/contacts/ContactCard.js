@@ -32,10 +32,7 @@ export default function ContactCard(props) {
       <div className={styles.iconHolder}>
         <div className={styles.callerIcon} />
       </div>
-      <div
-        className={styles.cardDetails}
-        onClick={() => props.history.push(`/${data.id}`)}
-      >
+      <div className={styles.cardDetails}>
         <div className={styles.heading}>{data?.name}</div>
         <div className={styles.subHeading}>{data?.phoneNumber}</div>
       </div>
